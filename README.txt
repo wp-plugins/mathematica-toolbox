@@ -17,8 +17,8 @@ Mathematica Toolbox is a set of shortcodes for users who sometimes write about M
 **Syntax highlighting and formatting**
 
 * Uses the same highlighting script that is used on Mathematica.StackExchange.com and on Wolfram Community.
-* Preserves indentation and prevents WordPress from inserting `<br>` and `<p>` into code.
-* Replaces Wolfram Language codes such as `\[Alpha]`, `\[Gamma]` etc. with their corresponding characters.
+* Preserves code indentation and prevents WordPress from inserting `<br>` and `<p>` into code.
+* Replaces Wolfram Language character codes such as `\[Alpha]`, `\[Gamma]` etc. with their corresponding characters.
 
 The highlighting feature can be triggered in two ways. In the editor `[wlcode]Wolfram Language code here[/wlcode]` can be used to place a code block directly into the text, however it is often desirable to put the code elsewhere and refer to it instead of putting it into the text itself. This is achieved by the shortcode `[wlcode field="name"]` where `name` refers to a custom post field that holds the code that should be inserted at that point. You may have to go to "screen options" at the top of the editor page to enable custom post fields before you can see the custom post field form.
 
@@ -29,11 +29,11 @@ The highlighting feature can be triggered in two ways. In the editor `[wlcode]Wo
 * Retrieve and display raw data from a Wolfram Cloud API.
 * Display a link to the documentation of a Wolfram Language function.
 
-There exists [an official plugin](https://wordpress.org/plugins/wolfram-cdf-plugin/) from Wolfram Research to embed CDFs. However, that plugin [does not work](http://mathematica.stackexchange.com/q/66311/731) since WordPress 4.0.1. The shortcode in this plugin takes exactly the same arguments, so you can read the instructions on the old plugin's page to understand how to use this feature. There is also a button beneath the editor that will insert a template that you can simply fill out. You can upload the CDF and its backup image (which you get if you use the CDF export wizard) via the media uploader. Remember to take note of the dimension that the export wizard tells you that the CDF has, because you will need it later.
+The [official plugin](https://wordpress.org/plugins/wolfram-cdf-plugin/) from Wolfram Research that embeds CDFs [does not work](http://mathematica.stackexchange.com/q/66311/731) since WordPress 4.0.1. The shortcode in this plugin takes exactly the same arguments, so the instructions for that plugin are still valid. There is a button beneath the text editor in the post admin area that inserts a template that is straightforward to fill out. You can upload the CDF and its backup image, which you get if you use the CDF export wizard in Mathematica, via the media uploader. Remember to take note of the dimension that the export wizard tells you that the CDF has, because you will need it later.
 
-When you create an "instant API" in the Wolfram Cloud using `CloudDeploy` and `APIFunction` you will get back a URL. `[WolframCloudAPI id=""]` accepts the ID part of that URL as a parameter and will output the API's return value. Any other parameters will be passed on to the API. By default `[WolframCloudAPI]` assumes that the return value of the API is an image. If it is data you should add `image="false"` as a parameter.
+When you create an "instant API" in the Wolfram Cloud using `CloudDeploy` and `APIFunction` Mathematica gives you a URL. `[WolframCloudAPI id=""]` accepts the ID part of that URL as a parameter and will output the API's return value. Any other parameters will be passed on to the API. By default `[WolframCloudAPI]` assumes that the return value of the API is an image. If it is data you should add `image="false"` as a parameter.
 
-`[wldoc]function[/wldoc]` generates a link to the online documentation page of `function`.
+The shortcode `[wldoc]function[/wldoc]` generates a link to the online documentation page of `function`.
 
 **Retrieve posts from Mathematica.StackExchange.com**
 
@@ -52,9 +52,11 @@ Note that queries sent to the Stack Exchange API are cached in the background, s
 
 **Credits**
 
-* The part of the highlighter code that is specific to Wolfram Language is written by Patrick Scheibe and is available on his [Github page](https://github.com/halirutan/Mathematica-Source-Highlighting). He also wrote a browser [userscript](http://meta.mathematica.stackexchange.com/questions/1043/additional-useful-buttons-for-our-m-se-editor/) which extends the editor on Mathematica.StackExchange with the capaibility to generate links to the online Mathematica documentation, and the ability to replace glyph codes such as `\[Alpha]` with their corresponding characters. That script was an inspiration to the corresponding shortcodes provided by this plugin.
+* The part of the highlighter code that is specific to Wolfram Language is written by Patrick Scheibe and is available on his .  which extends the editor on Mathematica.StackExchange with the capaibility to generate links to the online Mathematica documentation, and the ability to replace glyph codes such as `\[Alpha]` with their corresponding characters. That script was an inspiration to the corresponding shortcodes provided by this plugin.
 
 * The highlighter script is Google Code Prettify.
+
+* [Patrick Scheibe](https://github.com/halirutan/Mathematica-Source-Highlighting) wrote the Google Code Prettify extension for Mathematica. He also wrote [this](http://meta.mathematica.stackexchange.com/questions/1043/additional-useful-buttons-for-our-m-se-editor/) browser extension with capablities that inspired this plugin, documentation links and Mathematica glyph codes to glyphs conversion.
 
 * The CDF embedding Javascript script was written by Wolfram Research.
 
@@ -85,12 +87,14 @@ When data is retrieved from Stack Exchange using a `mma_se_*` shortcode and no e
 == Screenshots ==
 
 1. CDFs can be included in WordPress posts, as well as data and images from Wolfram Cloud APIs.
-2. There are two different ways of including highlighted code blocks, but they produce the same result. Glyphs such as `\[Alpha]` get replaced with their corresponding character.
-3. Handy shortcodes can render usernames with links and links to the online documentation.
+2. There are two different ways to include highlighted code blocks, but they produce the same result. Character codes such as `\[Alpha]` get replaced automatically with their corresponding characters.
+3. Handy shortcodes can render usernames and links to the online documentation.
 4. Shortcodes that interface with the Stackexchange API can retrieve information about a user. `[mma_se_profile_box user_id="731"]` creates the profile box seen in the image.
 5. Answers specified by IDs, retrieved from the Stackexchange API.
-6. The top metabox is the "toolbox" after which the plugin got its name. A click on one of those buttons inserts the corresponding shortcode into the editor. Below the toolbox there is an example of code in custom post fields, which can be included in the post using `[wlcode field="example"]` and `[wlcode field="glyphs"]` respectively.
+6. The top metabox is the "toolbox" which the plugin is named after. A click on one of those buttons inserts the corresponding shortcode into the editor. Below the toolbox there is an example of code in custom post fields, which can be included in the post using `[wlcode field="example"]` and `[wlcode field="glyphs"]` respectively.
 
 == Changelog ==
+
+The current version is version 1.0.0.
 
 == Upgrade Notice ==
