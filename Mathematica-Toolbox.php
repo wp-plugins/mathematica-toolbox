@@ -13,7 +13,7 @@
  * Plugin Name:       Mathematica Toolbox
  * Plugin URI:        https://wordpress.org/plugins/Mathematica-Toolbox/
  * Description:       A "toolbox" of shortcodes for people who write articles about Mathematica code/the Wolfram Language. Includes source code highlighting for Mathematica code/Wolfram Language, automated CDF embedding, Wolfram Cloud API utility shortcode, and a seamless cached interface to Mathematica.Stackexchange.com.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Calle Ekdahl
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
