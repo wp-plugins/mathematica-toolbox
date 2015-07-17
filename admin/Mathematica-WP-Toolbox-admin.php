@@ -93,28 +93,31 @@ class Mathematica_WP_Toolbox_Admin {
 <a id="mathematica-wp-toolbox-shortcode-wlembedded" class="button add_media mathematica-wp-toolbox-shortcode" title="Highlight embedded code shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> Highlight embedded code
 </a>
-<a id="mathematica-wp-toolbox-shortcode-wlfield" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-wlfield" class="button add_media mathematica-wp-toolbox-shortcode" title="Highlight custom field code shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> Highlight custom field code
 </a>
-<a id="mathematica-wp-toolbox-shortcode-wldoc" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-wlinline" class="button add_media mathematica-wp-toolbox-shortcode" title="Inline code">
+	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> Inline code
+</a>
+<a id="mathematica-wp-toolbox-shortcode-wldoc" class="button add_media mathematica-wp-toolbox-shortcode" title="Documentation link shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> Documentation link
 </a>
-<a id="mathematica-wp-toolbox-shortcode-mma-se-username" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-mma-se-username" class="button add_media mathematica-wp-toolbox-shortcode" title="MMA.SE user's username shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> MMA.SE user's username
 </a>
-<a id="mathematica-wp-toolbox-shortcode-mma-se-user-questions" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-mma-se-user-questions" class="button add_media mathematica-wp-toolbox-shortcode" title="MMA.SE users's questions shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> MMA.SE user's questions
 </a>
-<a id="mathematica-wp-toolbox-shortcode-mma-se-user-answers" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-mma-se-user-answers" class="button add_media mathematica-wp-toolbox-shortcode" title="MMA.SE user's answers shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> MMA.SE user's answers
 </a>
-<a id="mathematica-wp-toolbox-shortcode-mma-se-questions" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-mma-se-questions" class="button add_media mathematica-wp-toolbox-shortcode" title="MMA.SE questions by IDs shortcode">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> MMA.SE questions by IDs
 </a>
-<a id="mathematica-wp-toolbox-shortcode-mma-se-answers" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-mma-se-answers" class="button add_media mathematica-wp-toolbox-shortcode" title="MMA.SE answers by IDs">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> MMA.SE answers by IDs
 </a>
-<a id="mathematica-wp-toolbox-shortcode-mma-se-profile-box" class="button add_media mathematica-wp-toolbox-shortcode" title="WolframCloudAPI Shortcode Snippet">
+<a id="mathematica-wp-toolbox-shortcode-mma-se-profile-box" class="button add_media mathematica-wp-toolbox-shortcode" title="MMA.SE profile box ">
 	<span class="wp-media-buttons-icon mathematica-wp-toolbox-icon"></span> MMA.SE profile box
 </a>
 <?php

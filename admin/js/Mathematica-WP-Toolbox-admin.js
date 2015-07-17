@@ -29,6 +29,13 @@
 		send_to_editor( '[wlcode field=""]' );
 	} );
 	
+	$( '#mathematica-wp-toolbox-shortcode-wlinline' ).click( function( event ) {
+
+		event.preventDefault();
+
+		send_to_editor( '[wlinline]' );
+	} );
+	
 	$( '#mathematica-wp-toolbox-shortcode-wldoc' ).click( function( event ) {
 
 		event.preventDefault();

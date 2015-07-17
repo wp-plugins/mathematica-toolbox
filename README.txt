@@ -93,6 +93,11 @@ When data is retrieved from Stack Exchange using a `mma_se_*` shortcode and no e
 
 == Changelog ==
 
-The current version is version 1.0.0.
+**Version 1.0.1**
+
+Release date: 17th July, 2015
+
+* Inline code shortcode. Used to get special markup for inline code.
+* Fixed incorrect title attributes of some of the shortcode buttons.
 
 == Upgrade Notice ==

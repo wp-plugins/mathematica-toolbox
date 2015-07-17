@@ -476,6 +476,13 @@ class Mathematica_WP_Toolbox_Public {
 			  }
 			  
 		  });
+		  
+		/**
+		  * Shortcode that displays inline code
+		  */
+		  add_shortcode( 'wlinline', function( $parameters, $content = '') {
+			  return '<code class="wl">' . $content . '</code>';
+		  });
 	}
 	
 	/**
