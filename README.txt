@@ -52,8 +52,6 @@ Note that queries sent to the Stack Exchange API are cached in the background, s
 
 **Credits**
 
-* The part of the highlighter code that is specific to Wolfram Language is written by Patrick Scheibe and is available on his .  which extends the editor on Mathematica.StackExchange with the capaibility to generate links to the online Mathematica documentation, and the ability to replace glyph codes such as `\[Alpha]` with their corresponding characters. That script was an inspiration to the corresponding shortcodes provided by this plugin.
-
 * The highlighter script is Google Code Prettify.
 
 * [Patrick Scheibe](https://github.com/halirutan/Mathematica-Source-Highlighting) wrote the Google Code Prettify extension for Mathematica. He also wrote [this](http://meta.mathematica.stackexchange.com/questions/1043/additional-useful-buttons-for-our-m-se-editor/) browser extension with capablities that inspired this plugin, documentation links and Mathematica glyph codes to glyphs conversion.
